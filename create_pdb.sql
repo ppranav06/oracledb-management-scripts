@@ -5,7 +5,12 @@
 -- select file_name from dba_data_files;
 */
 
-/* Creating a pluggable database */
+/*
+Creating a pluggable database
+
+Note: Change the DATAFILE and FILE_NAME_CONVERT parameters accordingly if you have
+deployed OracleDB on Windows. It requires replacement with the installation path.
+*/
 CREATE PLUGGABLE DATABASE DB_NAME
 ADMIN USER DB_NAME_ADMIN IDENTIFIED BY PasswordThatIsNotSecureHere
 ROLES = (DBA)
